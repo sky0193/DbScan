@@ -14,8 +14,8 @@ namespace Data
     {
         public int ClusterId;
         public DBScanPointLabel Label { get; set; }
-        public DBScanPoint(int x,
-                           int y)
+        public DBScanPoint(float x,
+                           float y)
         {
             X = x;
             Y = y;
