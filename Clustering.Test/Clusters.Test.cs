@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.IO;
 using Clustering.Test;
 using Data;
 using DBScan;
@@ -84,6 +85,20 @@ namespace Clusters.Test
 
             int numberOfExpectedNoisePoints = 4;
             Assert.AreEqual(numberOfExpectedNoisePoints, clusters.Noise.Points.Count);
+        }
+
+        [Test]
+        public void WriteClusters_ClusteredPoints_CSVCreated()
+        {
+            string filename = "clusters.txt";
+            var clusters = new ClusteredObjects();
+            clusters.CreateClustesFromClusteredPoints(_pointsData);
+            clusters.WriteClustersToCSV(filename);
+
+            Assert.True(File.Exists(filename));
+            
+            int numberOfLinesInCSV = System.IO.File.ReadAllLines(filename).Length;
+            Assert.AreEqual(_pointsData.Count, numberOfLinesInCSV);
         }
     }
 }
