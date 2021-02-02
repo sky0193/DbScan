@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using Data;
 
 //Inspirated from : https://www.aaai.org/Papers/KDD/1996/KDD96-037.pdf
+
 namespace DBScan
 {
     public class DbScan
@@ -18,7 +19,7 @@ namespace DBScan
             ClusterCount = 0;
         }
 
-        public void ClusterPoints(List<DBScanPoint> setOfPoints){
+        public void DbScanClustering(List<DBScanPoint> setOfPoints){
             for(var i = 0; i < setOfPoints.Count; i++){
                 if(setOfPoints[i].Label == DBScanPointLabel.Unclassified)
                 {

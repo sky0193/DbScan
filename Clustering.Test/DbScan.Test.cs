@@ -39,7 +39,7 @@ namespace Clustering.Test
             var clusteringAlgorithm = new DbScan(maximumDistance, minimumPoints);
             var clusters = new ClusteredObjects();
 
-            clusteringAlgorithm.ClusterPoints(_pointsData);     
+            clusteringAlgorithm.DbScanClustering(_pointsData);     
 
             clusters.CreateClustesFromClusteredPoints(_pointsData);
 
@@ -55,7 +55,7 @@ namespace Clustering.Test
             var clusteringAlgorithm = new DbScan(maximumDistance, minimumPoints);
             var clusters = new ClusteredObjects();
 
-            clusteringAlgorithm.ClusterPoints(_pointsData);     
+            clusteringAlgorithm.DbScanClustering(_pointsData);     
 
             clusters.CreateClustesFromClusteredPoints(_pointsData);
 
@@ -71,7 +71,7 @@ namespace Clustering.Test
             var clusteringAlgorithm = new DbScan(maximumDistance, minimumPoints);
             var clusters = new ClusteredObjects();
 
-            clusteringAlgorithm.ClusterPoints(_pointsData);     
+            clusteringAlgorithm.DbScanClustering(_pointsData);     
 
             clusters.CreateClustesFromClusteredPoints(_pointsData);
 
