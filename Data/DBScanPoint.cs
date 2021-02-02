@@ -1,6 +1,3 @@
-using System;
-
-
 namespace Data
 {
     public enum DBScanPointLabel
@@ -21,6 +18,17 @@ namespace Data
             Y = y;
             Label = DBScanPointLabel.Unclassified;
             ClusterId = 0;
+        }
+
+        internal DBScanPoint(float x,
+                           float y, 
+                           DBScanPointLabel label,
+                           int clusterId)
+        {
+            X = x;
+            Y = y;
+            Label = label;
+            ClusterId = clusterId;
         }
     }
 }
