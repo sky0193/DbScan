@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using System.Linq;
+
 
 namespace Data
 {
@@ -7,11 +7,11 @@ namespace Data
     {
         public List<DBScanPoint> Points { get; set; }
 
-        public void ExtractClustersFromPointList(List<DBScanPoint> pointsData, int ClusterId)
+        public Cluster(List<DBScanPoint> points)
         {
-            Cluster cluster = new Cluster();
-            Points = pointsData.Where(p => p.ClusterId == ClusterId).ToList();
+            Points = points;
         }
+
 
         public void printCluster()
         {
