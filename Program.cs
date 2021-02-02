@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using Data;
+using DBScan;
+using DBScan.TestData;
 
-namespace DBScan.TestData
+namespace Program
 {
     class Program
     {

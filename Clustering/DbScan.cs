@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using Data;
 
 //Inspirated from : https://www.aaai.org/Papers/KDD/1996/KDD96-037.pdf
-namespace DBScan.TestData
+namespace DBScan
 {
     public class DbScan
     {
