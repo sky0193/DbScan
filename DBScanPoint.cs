@@ -6,10 +6,10 @@ namespace Data
     public enum DBScanPointLabel
     {
         Noise,
-        Unprocessed,
-        Processed       
+        Unclassified,
+        Classified       
     }
-    
+
     public class DBScanPoint : Point
     {
         public int ClusterId;
@@ -19,7 +19,7 @@ namespace Data
         {
             X = x;
             Y = y;
-            Label = DBScanPointLabel.Unprocessed;
+            Label = DBScanPointLabel.Unclassified;
             ClusterId = 0;
         }
     }
