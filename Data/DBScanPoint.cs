@@ -21,9 +21,9 @@ namespace Data
         }
 
         internal DBScanPoint(float x,
-                           float y, 
-                           DBScanPointLabel label,
-                           int clusterId)
+                             float y, 
+                             DBScanPointLabel label,
+                             int clusterId)
         {
             X = x;
             Y = y;

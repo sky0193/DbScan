@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -88,7 +89,7 @@ namespace Data
                 var X = cluster.Points[i].X;
                 var Y = cluster.Points[i].Y;
                 var ID = cluster.ClusterID;
-                var newLine = string.Format("{0};{1};{2}", X, Y, cluster.ClusterID);
+                var newLine = string.Format(CultureInfo.InvariantCulture, "{0};{1};{2}", X, Y, cluster.ClusterID);
                 csv.AppendLine(newLine);
             }
         }
