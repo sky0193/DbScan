@@ -2,15 +2,10 @@
 
 DBScan is an examplary clustering algorithm implementation.
 
-## Installation
 
+## Result
 
-
-## Usage
-
-```bash
-
-```
+[Result](https://github.com/sky0193/DbScan/blob/feature/F-2_Add_Result_to_ReadMe/results/ClusteringOutput.png)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
